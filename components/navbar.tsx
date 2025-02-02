@@ -104,7 +104,18 @@ function NavItems({ mobile = false, setIsMenuOpen = () => {} }) {
           <DialogHeader>
             <DialogTitle className="text-[#00F3FF]">About DebugPrompt</DialogTitle>
             <DialogDescription className="text-gray-300">
-              This site was built by Richardson Dackam (@richardsondx)
+              DebugPrompt is an open-source hub where developers collaborate to master AI-powered debugging through precision prompt engineering. In an era where generative AI transforms how we code, a well-crafted prompt can mean the difference between hours of frustration and a swift, accurate solution.
+              <br /><br />
+              This platform addresses a critical gap in generative AI driven development: structured strategies to diagnose, analyze, and resolve coding issues efficiently using AI.<br/><br/>
+              DebugPrompt focuses on curating battle-tested prompts that:
+              <ul className="list-disc list-inside mt-2 space-y-1">
+                <li>Isolate root causes systematically</li>
+                <li>Generate actionable debugging steps</li>
+                <li>Prevent repetitive solution loops</li>
+                <li>Adapt to evolving codebases and AI models</li>
+              </ul>
+              <br />
+              This tool was built by <a href="https://x.com/richardsondx" target="_blank" rel="noopener noreferrer" className="text-[#00F3FF] hover:text-[#00F3FF]/80">@Richardsondx</a> and maintained by contributors. You can submit a contribution on github.
             </DialogDescription>
           </DialogHeader>
         </DialogContent>

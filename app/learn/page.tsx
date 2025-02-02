@@ -3,15 +3,34 @@ import { Card, CardContent } from "@/components/ui/card"
 const videos = [
   {
     id: "1",
-    title: "Cursor AI for Beginners: A Complete Guide",
-    videoId: "YG459bD8qmw",
+    title: "Stop AI IDEs From Breaking Your Code",
+    videoId: "DlTN9F-QG_8",
     author: {
       name: "Richardson Dackam",
     },
     description:
-      "Are you new to Cursor AI and wondering how to get started? In this video you'll learn exactly how to use Cursor AI (No Experience Needed).",
+      "Learn how to prevent AI IDEs from causing issues in your code.",
   },
-  // Add more videos here
+  {
+    id: "2",
+    title: "Generate Bug-Free AI Code With API Docs—Here's How",
+    videoId: "vs1U6k5ju_A",
+    author: {
+      name: "Richardson Dackam",
+    },
+    description:
+      "Discover how to use API documentation to generate error-free AI code.",
+  },
+  {
+    id: "3",
+    title: "How to Feed Supabase Data to AI IDEs (Cursor vs Windsurf)",
+    videoId: "-q_IITFxI2Y",
+    author: {
+      name: "Richardson Dackam",
+    },
+    description:
+      "Explore methods to integrate Supabase data with AI IDEs like Cursor and Windsurf.",
+  },
 ]
 
 export default function LearnPage() {
