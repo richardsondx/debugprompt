@@ -103,20 +103,29 @@ function NavItems({ mobile = false, setIsMenuOpen = () => {} }) {
         <DialogContent className="sm:max-w-[425px] bg-gray-900 text-white">
           <DialogHeader>
             <DialogTitle className="text-[#00F3FF]">About DebugPrompt</DialogTitle>
-            <DialogDescription className="text-gray-300">
+            <div className="text-sm text-gray-300 mt-2">
               DebugPrompt is an open-source hub where developers collaborate to master AI-powered debugging through precision prompt engineering. In an era where generative AI transforms how we code, a well-crafted prompt can mean the difference between hours of frustration and a swift, accurate solution.
               <br /><br />
-              This platform addresses a critical gap in generative AI driven development: structured strategies to diagnose, analyze, and resolve coding issues efficiently using AI.<br/><br/>
+              This platform addresses a critical gap in generative AI driven development: <b className="animate-shimmer bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-200 bg-[length:200%_100%] text-transparent bg-clip-text">structured strategies to diagnose, analyze, and resolve coding issues efficiently using prompt engineering</b>.
+              <br /><br />
               DebugPrompt focuses on curating battle-tested prompts that:
-              <ul className="list-disc list-inside mt-2 space-y-1">
-                <li>Isolate root causes systematically</li>
-                <li>Generate actionable debugging steps</li>
-                <li>Prevent repetitive solution loops</li>
-                <li>Adapt to evolving codebases and AI models</li>
-              </ul>
+              <div className="mt-2 space-y-1">
+                <div className="flex">
+                  <li>Isolate root causes systematically</li>
+                </div>
+                <div className="flex">
+                  <li>Generate actionable debugging steps</li>
+                </div>
+                <div className="flex">
+                  <li>Prevent repetitive solution loops</li>
+                </div>
+                <div className="flex">
+                  <li>Adapt to evolving codebases and AI models</li>
+                </div>
+              </div>
               <br />
               This tool was built by <a href="https://x.com/richardsondx" target="_blank" rel="noopener noreferrer" className="text-[#00F3FF] hover:text-[#00F3FF]/80">@Richardsondx</a> and maintained by contributors. You can submit a contribution on github.
-            </DialogDescription>
+            </div>
           </DialogHeader>
         </DialogContent>
       </Dialog>

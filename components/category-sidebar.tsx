@@ -14,13 +14,20 @@ export default function CategorySidebar({ categories, counts }: CategorySidebarP
   const pathname = usePathname()
   const isHomePage = pathname === "/"
   const [isOpen, setIsOpen] = useState(false)
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
 
   const handleCategoryClick = (category: string | null) => {
+    setSelectedCategory(category)
     if (isHomePage) {
       window.dispatchEvent(new CustomEvent("categorySelected", { detail: category }))
     } else {
       router.push(`/?category=${encodeURIComponent(category || "")}`)
     }
+    setIsOpen(false)
+  }
+
+  const isActiveCategory = (category: string | null) => {
+    return category === selectedCategory
   }
 
   return (
@@ -30,13 +37,19 @@ export default function CategorySidebar({ categories, counts }: CategorySidebarP
         className="flex justify-between items-center w-full p-4 lg:hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="font-semibold text-[#00F3FF]">Categories</span>
+        <span className="font-semibold text-[#00F3FF]">
+          {selectedCategory || "Categories"}
+        </span>
         {isOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
       </Button>
       <div className={`space-y-2 p-4 ${isOpen ? "block" : "hidden lg:block"}`}>
         <Button
           variant="ghost"
-          className="w-full justify-start text-gray-400 hover:text-[#00F3FF] hover:bg-[#00F3FF]/10"
+          className={`w-full justify-start ${
+            isActiveCategory(null)
+              ? 'text-[#00F3FF] bg-[#00F3FF]/10'
+              : 'text-gray-400 hover:text-[#00F3FF] hover:bg-[#00F3FF]/10'
+          }`}
           onClick={() => handleCategoryClick(null)}
         >
           All
@@ -45,7 +58,11 @@ export default function CategorySidebar({ categories, counts }: CategorySidebarP
           <Button
             key={category}
             variant="ghost"
-            className="w-full justify-start text-gray-400 hover:text-[#00F3FF] hover:bg-[#00F3FF]/10"
+            className={`w-full justify-start ${
+              isActiveCategory(category)
+                ? 'text-[#00F3FF] bg-[#00F3FF]/10'
+                : 'text-gray-400 hover:text-[#00F3FF] hover:bg-[#00F3FF]/10'
+            }`}
             onClick={() => handleCategoryClick(category)}
           >
             {category}
