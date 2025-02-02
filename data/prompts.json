@@ -1,0 +1,594 @@
+[
+  {
+    "id": "1",
+    "category": "Error Diagnosis",
+    "tags": ["typescript", "debugging"],
+    "prompt": "Analyze this TypeScript error. \n\nBreak down the error message into its core components: \n1) What is the type mismatch? \n2) Where is it occurring? \n3) What are the possible causes? \n4) Provide three potential fixes with pros and cons for each.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "2",
+    "category": "Data Flow Tracing",
+    "tags": ["react", "state-management"],
+    "prompt": "Trace the data flow in this React component. \n\nIdentify: \n1) Where state is initialized \n2) How props are passed down \n3) Where side effects occur \n4) How data flows between parent and child components. \n\nAdd console.log statements to validate your findings.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "3",
+    "category": "Approach Comparison",
+    "tags": ["algorithm", "optimization"],
+    "prompt": "Compare these two approaches to solving the same problem. \n\nFor each approach, analyze: \n1) Time complexity \n2) Space complexity \n3) Readability \n4) Maintainability \n5) Edge case handling. \n\nRecommend the best approach and explain why.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "4",
+    "category": "Pseudocode Analysis",
+    "tags": ["algorithm", "planning"],
+    "prompt": "Convert this pseudocode into working code. \n\nAnalyze each step: \n1) Are there logical gaps? \n2) Are edge cases handled? \n3) Are the data structures optimal? \n4) Are there redundant operations? \n\nProvide a revised version with explanations.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "5",
+    "category": "Assumption Testing",
+    "tags": ["debugging", "hypothesis"],
+    "prompt": "List three assumptions about why this bug is occurring. \n\nFor each assumption: \n1) Design a test to validate it \n2) Explain the expected outcome \n3) Provide a fix if the assumption is correct. \n\nDocument your findings.",
+    "model": ["deepseek-r1"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "6",
+    "category": "Refactoring",
+    "tags": ["clean-code", "maintainability"],
+    "prompt": "Refactor this code to improve readability and maintainability. \n\nFocus on: \n1) Reducing nesting \n2) Extracting reusable functions \n3) Improving variable naming \n4) Adding comments where necessary. \n\nExplain your changes.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "7",
+    "category": "Performance Tuning",
+    "tags": ["optimization", "profiling"],
+    "prompt": "Analyze this code for performance bottlenecks. \n\nIdentify: \n1) Expensive operations \n2) Unnecessary re-renders \n3) Memory leaks \n4) Network latency issues. \n\nProvide specific optimizations with benchmarks.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "8",
+    "category": "Prompt Iteration",
+    "tags": ["llm", "debugging"],
+    "prompt": "Iterate on this debugging prompt to make it more effective. \n\nFocus on: \n1) Clarity \n2) Specificity \n3) Actionability \n4) Context. \n\nProvide three improved versions with explanations for each change.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "9",
+    "category": "Test Generation",
+    "tags": ["unit-testing", "coverage"],
+    "prompt": "Generate unit tests for this code. \n\nFocus on: \n1) Edge cases \n2) Input validation \n3) Error handling \n4) Expected outputs. \n\nProvide test cases with assertions and explanations.",
+    "model": ["deepseek-r1"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "10",
+    "category": "Environment Debugging",
+    "tags": ["docker", "configuration"],
+    "prompt": "Debug this Docker configuration. \n\nIdentify: \n1) Missing dependencies \n2) Incorrect environment variables \n3) Port conflicts \n4) Build errors. \n\nProvide a step-by-step fix with explanations.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "11",
+    "category": "Security Analysis",
+    "tags": ["vulnerability", "authentication"],
+    "prompt": "Analyze this code for security vulnerabilities. \n\nFocus on: \n1) Input sanitization \n2) Authentication flaws \n3) Data exposure \n4) Dependency risks. \n\nProvide fixes and best practices.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "12",
+    "category": "Edge Case Handling",
+    "tags": ["robustness", "validation"],
+    "prompt": "Identify edge cases for this code. \n\nFocus on: \n1) Invalid inputs \n2) Boundary conditions \n3) Race conditions \n4) Error recovery. \n\nProvide test cases and fixes for each edge case.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "13",
+    "category": "Logic Breakdown",
+    "tags": ["algorithm", "debugging"],
+    "prompt": "Break down the logic of this algorithm. \n\nExplain: \n1) The core logic \n2) Key variables and their roles \n3) Control flow \n4) Exit conditions. \n\nIdentify any logical flaws and suggest improvements.",
+    "model": ["deepseek-r1"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "14",
+    "category": "Dependency Debugging",
+    "tags": ["npm", "versioning"],
+    "prompt": "Debug this dependency issue. \n\nIdentify: \n1) Version conflicts \n2) Missing packages \n3) Circular dependencies \n4) Build errors. \n\nProvide a step-by-step resolution with explanations.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "15",
+    "category": "Code Optimization",
+    "tags": ["performance", "clean-code"],
+    "prompt": "Optimize this code for performance and readability. \n\nFocus on: \n1) Reducing complexity \n2) Eliminating redundancy \n3) Improving data structures \n4) Enhancing readability. \n\nProvide benchmarks for your changes.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "16",
+    "category": "Error Diagnosis",
+    "tags": ["python", "debugging"],
+    "prompt": "Analyze this Python error traceback. \n\nBreak it down into: \n1) The root cause \n2) The sequence of function calls leading to the error \n3) The data state at the time of failure \n4) Potential fixes with explanations.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "17",
+    "category": "Data Flow Tracing",
+    "tags": ["redux", "state-management"],
+    "prompt": "Trace the data flow in this Redux application. \n\nIdentify: \n1) How actions are dispatched \n2) How reducers process state \n3) How selectors retrieve data \n4) Where side effects occur. \n\nAdd logging to validate your findings.",
+    "model": ["deepseek-r1"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "18",
+    "category": "Approach Comparison",
+    "tags": ["api-design"],
+    "prompt": "Compare [X] vs [Y] for this use case. \n\nAnalyze: \n1) Performance \n2) Flexibility \n3) Complexity \n4) Developer experience. \n\nRecommend the best approach and explain why.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "19",
+    "category": "Pseudocode Analysis",
+    "tags": ["planning", "algorithm"],
+    "prompt": "Analyze this pseudocode for logical flaws. \n\nIdentify: \n1) Missing steps \n2) Incorrect assumptions \n3) Edge cases not handled \n4) Potential optimizations. \n\nProvide a revised version with explanations.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "20",
+    "category": "Assumption Testing",
+    "tags": ["debugging", "hypothesis"],
+    "prompt": "List three assumptions about why this API is failing. \n\nFor each assumption: \n1) Design a test to validate it \n2) Explain the expected outcome \n3) Provide a fix if the assumption is correct. \n\nDocument your findings.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {
+      "github": "https://github.com/richardsondx"
+    }
+  },
+  {
+    "id": "21",
+    "category": "Error Diagnosis",
+    "tags": ["api", "authentication"],
+    "prompt": "Analyze this API authentication error. \n\nIdentify: \n1) Missing credentials \n2) Incorrect token scopes \n3) Clock skew issues \n4) Network configuration problems. \n\nProvide a step-by-step verification checklist.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "22",
+    "category": "Error Diagnosis",
+    "tags": ["database", "query"],
+    "prompt": "Debug this database query failure. \n\nCheck: \n1) Connection parameters \n2) Table permissions \n3) Query syntax \n4) Data types. \n\nProvide validation steps and safe retry patterns.",
+    "model": ["gpt-o1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "23",
+    "category": "Data Flow Tracing",
+    "tags": ["state", "supabase"],
+    "prompt": "Trace realtime data flow between Supabase and client components. \n\nIdentify: \n1) Subscription setup \n2) State update triggers \n3) Cache synchronization \n4) Memory management. \n\nAdd debug logs at key transition points.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "24",
+    "category": "Approach Comparison",
+    "tags": ["architecture", "scaling"],
+    "prompt": "Compare client-side vs server-side API rate limiting. \n\nAnalyze: \n1) Security implications \n2) Performance impact \n3) Implementation complexity \n4) Scalability. \n\nRecommend optimal strategy for high-traffic applications.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "25",
+    "category": "Pseudocode Analysis",
+    "tags": ["webhooks", "supabase"],
+    "prompt": "Convert this webhook handling pseudocode into production-ready logic. \n\nEnsure: \n1) Signature verification \n2) Error recovery \n3) Async processing \n4) Retry mechanisms. \n\nHighlight security-critical sections.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "26",
+    "category": "Assumption Testing",
+    "tags": ["caching", "performance"],
+    "prompt": "Validate three assumptions about cache misses. \n\nFor each: \n1) Design an experiment \n2) Define success metrics \n3) Implement monitoring \n4) Document conclusions. \n\nFocus on time-to-live values and invalidation patterns.",
+    "model": ["deepseek-r1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "27",
+    "category": "Refactoring",
+    "tags": ["security", "api"],
+    "prompt": "Refactor API client initialization to improve security. \n\nAddress: \n1) Secret storage \n2) Token rotation \n3) Error shielding \n4) Request validation. \n\nMaintain backward compatibility during transition.",
+    "model": ["gpt-o1-mini"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "28",
+    "category": "Performance Tuning",
+    "tags": ["rendering", "optimization"],
+    "prompt": "Optimize client-side rendering performance. \n\nIdentify: \n1) Unnecessary re-renders \n2) Large component trees \n3) Expensive computations \n4) Memory-heavy subscriptions. \n\nProvide measurable optimization targets.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "29",
+    "category": "Test Generation",
+    "tags": ["integration", "api"],
+    "prompt": "Generate integration tests for third-party API interactions. \n\nCover: \n1) Success scenarios \n2) Rate limited requests \n3) Invalid responses \n4) Network failures. \n\nInclude mock server configuration examples.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "30",
+    "category": "Environment Debugging",
+    "tags": ["configuration", "secrets"],
+    "prompt": "Debug environment-specific configuration issues. \n\nCompare: \n1) Local vs production variables \n2) Build-time vs runtime values \n3) Secret injection methods \n4) Configuration validation. \n\nCreate diagnostic workflow.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "31",
+    "category": "Security Analysis",
+    "tags": ["auth", "supabase"],
+    "prompt": "Audit Supabase RLS policies and auth flows. \n\nCheck: \n1) Permission escalation paths \n2) Session management \n3) Token validation \n4) Rate limiting. \n\nProvide hardening recommendations.",
+    "model": ["gpt-o1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "32",
+    "category": "Edge Case Handling",
+    "tags": ["api", "failure"],
+    "prompt": "Identify edge cases in API failure recovery. \n\nConsider: \n1) Partial successes \n2) Duplicate requests \n3) Network flakiness \n4) Clock drift. \n\nDesign compensating transactions for each scenario.",
+    "model": ["deepseek-r1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "33",
+    "category": "Logic Breakdown",
+    "tags": ["workflow", "automation"],
+    "prompt": "Deconstruct this automated workflow. \n\nAnalyze: \n1) State transitions \n2) Error boundaries \n3) Retry logic \n4) Finality checks. \n\nCreate failure mode diagrams with recovery paths.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "34",
+    "category": "Dependency Debugging",
+    "tags": ["conflict", "packages"],
+    "prompt": "Resolve dependency tree conflicts. \n\nIdentify: \n1) Version incompatibilities \n2) Peer dependency requirements \n3) Polyfill issues \n4) Type definition mismatches. \n\nProvide upgrade/migration strategy.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "35",
+    "category": "Code Optimization",
+    "tags": ["performance", "supabase"],
+    "prompt": "Optimize Supabase query patterns. \n\nAnalyze: \n1) Index usage \n2) Batch operations \n3) Subscription efficiency \n4) Caching strategies. \n\nProvide benchmarks for different optimization approaches.",
+    "model": ["gpt-o1-mini"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "36",
+    "category": "Security Analysis",
+    "tags": ["secrets", "supabase"],
+    "prompt": "Audit environment key usage in this code. \n\nIdentify: \n1) Hardcoded secrets \n2) Improper storage locations \n3) Over-permissive access \n4) Missing encryption. \n\nProvide migration plan to secure storage with rotation examples.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "37",
+    "category": "Security Analysis",
+    "tags": ["configuration", "secrets"],
+    "prompt": "Design key rotation workflow for Supabase credentials. \n\nInclude: \n1) Grace period handling \n2) Client reauthentication \n3) Audit trails \n4) Fallback mechanisms. \n\nEnsure zero downtime during rotation.",
+    "model": ["gpt-o1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "38",
+    "category": "Error Diagnosis",
+    "tags": ["auth", "supabase"],
+    "prompt": "Debug Supabase auth session persistence. \n\nCheck: \n1) Token refresh timing \n2) Storage mechanisms \n3) CORS configuration \n4) RLS policy matches. \n\nProvide auth state diagram with failure points.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "39",
+    "category": "Assumption Testing",
+    "tags": ["oauth", "supabase"],
+    "prompt": "Validate three hypotheses for failed OAuth logins. \n\nFor each: \n1) Design test scenario \n2) Expected debug output \n3) Fix implementation \n4) Prevention measures. \n\nFocus on callback URLs and scopes.",
+    "model": ["deepseek-r1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "40",
+    "category": "Prompt Iteration",
+    "tags": ["llm", "debugging"],
+    "prompt": "Break solution iteration loop. \n\nCurrent approach: [PASTE FAILED SOLUTION]. \n\nGenerate 3 alternative strategies that: \n1) Use different architectural patterns \n2) Employ alternative libraries/APIs \n3) Change error handling paradigm \n4) Modify data flow. \n\nCompare tradeoffs.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "41",
+    "category": "Approach Comparison",
+    "tags": ["problem-solving", "alternatives"],
+    "prompt": "Current solution attempts: [LIST ATTEMPTS]. \n\nPropose 3 fundamentally different approaches that: \n1) Reverse control flow \n2) Change state management \n3) Use alternative algorithms \n4) Modify API boundaries. \n\nAnalyze failure resistance of each.",
+    "model": ["gpt-o1-mini"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "42",
+    "category": "Logic Breakdown",
+    "tags": ["root-cause", "analysis"],
+    "prompt": "Perform 5-layer 'Why' analysis on this error: [ERROR]. \n\nFor each layer: \n1) State assumption \n2) Required verification \n3) Debugging tactic \n4) Evidence collection. \n\nBuild causal tree diagram.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "43",
+    "category": "Data Flow Tracing",
+    "tags": ["diagnostics", "context"],
+    "prompt": "Establish full execution context for this error. \n\nDocument: \n1) Preceding API calls \n2) State mutations \n3) External dependencies \n4) Timing sequences. \n\nRecreate error through controlled environment simulation.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "44",
+    "category": "Assumption Testing",
+    "tags": ["hypothesis", "validation"],
+    "prompt": "Challenge initial fix hypothesis ([PASTE ASSUMPTION]). \n\nIdentify: \n1) Flawed premises \n2) Untested edge cases \n3) Alternative explanations \n4) Compounding factors. \n\nProvide evidence-based counterarguments.",
+    "model": ["deepseek-r1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "45",
+    "category": "Error Diagnosis",
+    "tags": ["root-cause", "analysis"],
+    "prompt": "Perform differential diagnosis for this error. \n\nCompare: \n1) Client vs server origin \n2) Code vs configuration \n3) New vs existing functionality \n4) Data vs logic issues. \n\nWeight probabilities with evidence.",
+    "model": ["gpt-o1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "46",
+    "category": "Refactoring",
+    "tags": ["prevention", "automation"],
+    "prompt": "Convert this fix into self-healing logic. \n\nImplement: \n1) Automatic detection \n2) Recovery procedures \n3) State reconciliation \n4) Alerting. \n\nInclude circuit breaker pattern with backoff strategy.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "47",
+    "category": "Test Generation",
+    "tags": ["regression", "prevention"],
+    "prompt": "Create regression test suite targeting recurring issue. \n\nInclude: \n1) Fault injection \n2) Chaos engineering principles \n3) Automated rollback \n4) Health checks. \n\nGenerate Gherkin scenarios with CI/CD integration.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "48",
+    "category": "Security Analysis",
+    "tags": ["secrets", "supabase"],
+    "prompt": "Implement secret zero pattern for Supabase keys. \n\nDesign: \n1) Bootstrapping process \n2) Runtime protection \n3) Audit logging \n4) Emergency revocation. \n\nProvide infrastructure-as-code examples.",
+    "model": ["gpt-o1-mini"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "49",
+    "category": "Environment Debugging",
+    "tags": ["configuration", "secrets"],
+    "prompt": "Trace secret exposure paths through system layers. \n\nCheck: \n1) Build process \n2) Deployment artifacts \n3) Runtime memory \n4) Log outputs. \n\nProvide mitigation checklist per exposure vector.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "50",
+    "category": "Error Diagnosis",
+    "tags": ["auth", "supabase"],
+    "prompt": "Diagnose Supabase JWT validation failures. \n\nInvestigate: \n1) Token generation \n2) Key rotation \n3) Claims structure \n4) Clock synchronization. \n\nProvide validation workflow with debug endpoints.",
+    "model": ["deepseek-r1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "51",
+    "category": "Prompt Iteration",
+    "tags": ["llm", "debugging"],
+    "prompt": "Break analysis deadlock with first principles approach. \n\nRe-express problem in terms of: \n1) Input/output contracts \n2) State transitions \n3) Data invariants \n4) Failure budgets. \n\nGenerate solution from fundamentals.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "52",
+    "category": "Code Optimization",
+    "tags": ["security", "supabase"],
+    "prompt": "Harden Supabase client initialization. \n\nImplement: \n1) Defense in depth \n2) Request validation \n3) Error masking \n4) Rate limiting. \n\nProvide security middleware examples.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "53",
+    "category": "Test Generation",
+    "tags": ["chaos", "resilience"],
+    "prompt": "Create chaos tests for recurring auth failures. \n\nSimulate: \n1) Token service outages \n2) Clock drift \n3) Key rotation failures \n4) Permission leakage. \n\nDefine automated recovery verification steps.",
+    "model": ["gpt-o1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "54",
+    "category": "Refactoring",
+    "tags": ["prevention", "patterns"],
+    "prompt": "Refactor error-prone code using anti-fragile patterns. \n\nApply: \n1) Circuit breakers \n2) Bulkheads \n3) Retry budgets \n4) Fallback defaults. \n\nInclude implementation roadmap with metrics.",
+    "model": ["deepseek-r1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "55",
+    "category": "Data Flow Tracing",
+    "tags": ["supabase", "schema"],
+    "prompt": "Verify code against actual Supabase schema. \n\nFor each database interaction: \n1) List assumed table/column names \n2) Confirm existence in schema \n3) Check data types \n4) Validate relationships. \n\nHighlight unverified attributes in red.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "56",
+    "category": "Logic Breakdown",
+    "tags": ["supabase", "validation"],
+    "prompt": "Cross-reference implementation with provided table schema. \n\nCreate checklist comparing: \n1) Query vs actual columns \n2) Relationship handling \n3) Data type conversions \n4) Null handling. \n\nFlag mismatches with debug statements.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "57",
+    "category": "Security Analysis",
+    "tags": ["supabase", "rlspolicies"],
+    "prompt": "Debug RLS policy failures. \n\nAdd: \n1) Policy violation logging \n2) User context inspection \n3) Query explain analysis \n4) Temporary policy test suite. \n\nProvide step-by-step policy debugging workflow.",
+    "model": ["deepseek-r1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "58",
+    "category": "Prompt Iteration",
+    "tags": ["debugging", "logging"],
+    "prompt": "Insert strategic debug statements for self-diagnosis. \n\nAdd: \n1) Pre/post operation state dumps \n2) Timing metrics \n3) Error boundary markers \n4) Data validation checkpoints. \n\nExplain each log's diagnostic purpose.",
+    "model": ["gpt-o1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "59",
+    "category": "Test Generation",
+    "tags": ["validation", "self-review"],
+    "prompt": "Before presenting solution: \n1) Verify input/output types \n2) Check edge cases \n3) Test with sample data \n4) Confirm against requirements. \n\nDisplay validation results as ✅/❌ checklist with evidence.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "60",
+    "category": "Approach Comparison",
+    "tags": ["alternatives", "debugging"],
+    "prompt": "Provide 3 alternative solutions ranked by likelihood. \n\nFor each: \n1) Success conditions \n2) Failure indicators \n3) Diagnostic tests \n4) Fallback sequence. \n\nPresent as decision tree with test shortcuts.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "61",
+    "category": "Data Flow Tracing",
+    "tags": ["discrepancy", "debugging"],
+    "prompt": "Trace data mismatch from pseudocode to implementation. \n\nAdd debug logs at: \n1) Data ingestion \n2) Transformations \n3) State updates \n4) Final rendering. \n\nCompare actual vs expected values at each stage.",
+    "model": ["gpt-o1-mini"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "62",
+    "category": "Error Diagnosis",
+    "tags": ["supabase", "assumptions"],
+    "prompt": "Identify hidden assumptions in database queries. \n\nCheck: \n1) Implicit column existence \n2) Relationship directions \n3) Null handling \n4) Authentication context. \n\nGenerate assumption validation test cases.",
+    "model": ["deepseek-r1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "63",
+    "category": "Refactoring",
+    "tags": ["debuggability", "logging"],
+    "prompt": "Refactor code with embedded diagnostics. \n\nAdd: \n1) Auto-logging decorators \n2) State snapshots \n3) Error context capture \n4) Debug mode toggle. \n\nProvide usage examples for quick issue isolation.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "64",
+    "category": "Logic Breakdown",
+    "tags": ["dataflow", "validation"],
+    "prompt": "Create data provenance map from source to UI. \n\nAt each step: \n1) Log transformation inputs \n2) Validate against spec \n3) Flag deviations \n4) Capture context. \n\nGenerate interactive visualization of data journey.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "65",
+    "category": "Logic Breakdown",
+    "tags": ["data-discrepancy", "debugging"],
+    "prompt": "Generate a pseudocode comparison between expected and actual data flow. \n\nStructure as: \n1. Expected Data Journey: \n   - Source → Transformations → State → Display \n2. Actual Implementation Flow: \n   - [Trace code path] \nHighlight divergences with 🔴 and list 3 key questions to resolve ambiguity.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "66",
+    "category": "Data Flow Tracing",
+    "tags": ["state-management", "debugging"],
+    "prompt": "Create a state transition diagram for this feature. \n\nInclude: \n- Expected state shape at key points \n- Actual observed values \n- Mutation triggers \n- Consumer components \nFlag mismatches with 🚩 and propose 2 debug statements to capture missing context.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "67",
+    "category": "Error Diagnosis",
+    "tags": ["component-lifecycle", "debugging"],
+    "prompt": "Break down the component lifecycle into a timeline:\n1. Expected Mount/Update Sequence:\n   - API calls\n   - State updates\n   - DOM changes\n2. Actual Observed Behavior:\n   - [Trace execution order]\nIdentify 3 potential synchronization issues with ⚡ markers.",
+    "model": ["deepseek-r1"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "68",
+    "category": "Pseudocode Analysis",
+    "tags": ["data-transformation", "debugging"],
+    "prompt": "Compare ideal vs implemented data pipeline:\n[Expected]\nRaw Data → Clean → Transform → Display\n[Actual]\n[Reverse-engineer code path]\nAnnotate differences with ❗ and suggest 3 console.log checkpoints to isolate issues.",
+    "model": ["gpt-o1", "gpt-o1-mini", "gpt-o3-mini"],
+    "author": {"github": "https://github.com/richardsondx"}
+  },
+  {
+    "id": "69",
+    "category": "Assumption Testing",
+    "tags": ["debugging", "context-gap"],
+    "prompt": "List 5 critical assumptions the code makes about:\n- Data sources\n- State synchronization\n- User interactions\n- Error boundaries\nFor each assumption, provide a 1-sentence verification test to confirm validity.",
+    "model": ["claude-3.5-sonnet"],
+    "author": {"github": "https://github.com/richardsondx"}
+  }
+]
