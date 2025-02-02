@@ -5,10 +5,16 @@ import { toast } from "sonner"
 
 const ads = [
   {
-    logo: "/ads/ciense.svg",
-    title: "Ciensa Debugger Suite",
-    text: "Advanced AI code analysis → 20% OFF with DEBUGPROMPT",
-    link: "https://www.ciensa.com/debugger-suite?ref=debugprompt",
+    logo: "https://assets.skool.com/f/7385821bad4241f880cbbc19ffc56ff5/3156122eb7ee45b1963f1f081ab86614dc48dd3564824620b81921251b58fa32",
+    title: "SaaSpreneur Academy",
+    text: "Learn to build Apps with AI → 20% OFF with DEBUGPROMPT",
+    link: "https://www.skool.com/saaspreneur-academy?ref=debugprompt",
+  },
+  {
+    logo: "https://ideas.richdackam.com/favicon.ico",
+    title: "SaaSpreneur Academy",
+    text: "Find the best AI ideas or generate your own",
+    link: "https://saasideas.richdackam.com?ref=debugprompt",
   },
 ]
 
