@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/sonner"
 import Navbar from "@/components/navbar"
 import CategorySidebar from "@/components/category-sidebar"
 import AdToast from "@/components/ad-toast"
+import GoogleAnalytics from "@/components/google-analytics"
 import categories from "@/data/categories.json"
 import prompts from "@/data/prompts.json"
 import type React from "react"
@@ -32,6 +33,9 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body className={`${inter.className} bg-[#0A0A0A] text-white min-h-screen flex flex-col`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Navbar />
@@ -46,4 +50,3 @@ export default function RootLayout({
     </html>
   )
 }
-
