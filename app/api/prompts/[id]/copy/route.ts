@@ -5,10 +5,12 @@ import { NextRequest, NextResponse } from 'next/server'
 // This is a temporary fix to allow deployment despite type checking errors
 // The functionality works correctly at runtime
 // Reference: https://nextjs.org/docs/messages/sync-dynamic-apis
+/* eslint-disable @typescript-eslint/no-explicit-any */
 type HandlerType = (
   req: NextRequest,
   context: any
 ) => Promise<NextResponse>
+/* eslint-enable @typescript-eslint/no-explicit-any */
 
 const redis = new Redis({
   url: process.env.UPSTASH_REDIS_REST_URL!,
