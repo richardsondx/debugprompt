@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useMemo } from "react"
 import { useSearchParams } from "next/navigation"
-import { Button } from "@/components/ui/button"
 import PromptCard from "@/components/prompt-card"
 import prompts from "@/data/prompts.json"
 import type { Prompt } from "@/types/prompt"
@@ -41,7 +40,7 @@ export default function Home() {
   }, [searchParams])
 
   const filteredPrompts = useMemo(() => {
-    return prompts.filter((prompt: Prompt) => {
+    return prompts.filter((prompt) => {
       const matchesCategory = !selectedCategory || prompt.category === selectedCategory
       const matchesSearch = searchQuery === "" || prompt.prompt.toLowerCase().includes(searchQuery.toLowerCase())
       return matchesCategory && matchesSearch
@@ -69,4 +68,3 @@ export default function Home() {
     </div>
   )
 }
-
