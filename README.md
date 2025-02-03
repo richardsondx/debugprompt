@@ -116,6 +116,13 @@ Run the development server:
 npm run dev
 ```
 
+Env variables (create a `.env.local` file):
+```
+UPSTASH_REDIS_REST_URL=https://your-url.upstash.io
+UPSTASH_REDIS_REST_TOKEN=your-token
+```
+We use this for counting the copies on prompts.
+
 ## License
 MIT License. See LICENSE for details.
 
