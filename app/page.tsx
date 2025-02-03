@@ -1,11 +1,10 @@
 "use client"
 
-import { useState, useEffect, useMemo } from "react"
+import { useState, useEffect, useMemo, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import PromptCard from "@/components/prompt-card"
 import prompts from "@/data/prompts.json"
 import type { Prompt } from "@/types/prompt"
-
 
 // Fisher-Yates shuffle algorithm
 function shuffleArray<T>(array: T[]): T[] {
@@ -17,7 +16,7 @@ function shuffleArray<T>(array: T[]): T[] {
   return shuffled
 }
 
-export default function Home() {
+function HomeContent() {
   const searchParams = useSearchParams()
   const [selectedCategory, setSelectedCategory] = useState<string | null>(searchParams.get("category") || null)
   const [searchQuery, setSearchQuery] = useState(searchParams.get("search") || "")
@@ -66,5 +65,22 @@ export default function Home() {
         <p className="text-center text-gray-400">No prompts found matching your criteria.</p>
       )}
     </div>
+  )
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={
+      <div className="space-y-6 animate-pulse">
+        <div className="h-6 bg-[#00F3FF]/10 rounded w-1/4"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[...Array(6)].map((_, i) => (
+            <div key={i} className="h-64 bg-[#00F3FF]/10 rounded"></div>
+          ))}
+        </div>
+      </div>
+    }>
+      <HomeContent />
+    </Suspense>
   )
 }

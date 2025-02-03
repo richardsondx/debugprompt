@@ -18,6 +18,11 @@ import { ModelCompare } from "./model-compare"
 
 const GITHUB_REPO_URL = "https://github.com/richardsondx/debugprompt"
 
+interface NavItemsProps {
+  mobile?: boolean;
+  setIsMenuOpen?: (value: boolean) => void;
+}
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [searchQuery, setSearchQuery] = useState("")
@@ -83,7 +88,7 @@ export default function Navbar() {
   )
 }
 
-function NavItems({ mobile = false, setIsMenuOpen = () => {} }) {
+function NavItems({ mobile = false, setIsMenuOpen = () => {} }: NavItemsProps) {
   const handleItemClick = () => {
     if (mobile) {
       setIsMenuOpen(false)
@@ -166,4 +171,3 @@ function NavItems({ mobile = false, setIsMenuOpen = () => {} }) {
     </div>
   )
 }
-

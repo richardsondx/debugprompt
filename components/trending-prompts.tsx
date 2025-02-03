@@ -6,7 +6,6 @@ interface Prompt {
   tags: string[]
   prompt: string
   upvotes: number
-  model: string[]
   author: {
     name: string
     avatar: string

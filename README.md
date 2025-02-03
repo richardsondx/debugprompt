@@ -27,7 +27,6 @@
      "category": "Category",
      "tags": ["tag1", "tag2"],
      "prompt": "Your debugging prompt here...",
-     "model": ["claude-3.5-sonnet"],
      "author": {
        "github": "https://github.com/yourusername"
      }

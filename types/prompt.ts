@@ -8,7 +8,6 @@ export interface Prompt {
   author: {
     github: string
   }
-  model?: string[]
   copyCount?: number
 }
 
