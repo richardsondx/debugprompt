@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "SKIP_ENV_VALIDATION=1 TS_NODE_PROJECT='tsconfig.build.json' next build || exit 0",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
