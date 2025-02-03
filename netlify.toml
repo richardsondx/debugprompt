@@ -1,0 +1,10 @@
+[build]
+  # Run the Next.js build command
+  command = "npm run build"
+  # The publish directory for the production build.
+  # For Next.js, you typically deploy the output built by @netlify/plugin-nextjs.
+  publish = ".next"
+
+[[plugins]]
+  # This plugin bundles your Next.js app properly for Netlify
+  package = "@netlify/plugin-nextjs" 
