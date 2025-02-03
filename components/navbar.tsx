@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/dialog"
 import { Menu, X, Search } from "lucide-react"
 
-const GITHUB_REPO_URL = "https://github.com/yourusername/debugprompt"
+const GITHUB_REPO_URL = "https://github.com/richardsondx/debugprompt"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

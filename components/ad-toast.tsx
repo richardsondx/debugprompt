@@ -1,22 +1,8 @@
 "use client"
 
 import { useEffect } from "react"
+import ads from "@/data/ads.json"
 import { toast } from "sonner"
-
-const ads = [
-  {
-    logo: "https://assets.skool.com/f/7385821bad4241f880cbbc19ffc56ff5/3156122eb7ee45b1963f1f081ab86614dc48dd3564824620b81921251b58fa32",
-    title: "SaaSpreneur Academy",
-    text: "Learn to build Apps with AI → 20% OFF with DEBUGPROMPT",
-    link: "https://www.skool.com/saaspreneur-academy?ref=debugprompt",
-  },
-  {
-    logo: "https://ideas.richdackam.com/favicon.ico",
-    title: "SaaSpreneur Academy",
-    text: "Find the best AI ideas or generate your own",
-    link: "https://saasideas.richdackam.com?ref=debugprompt",
-  },
-]
 
 export default function AdToast() {
   useEffect(() => {
