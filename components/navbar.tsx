@@ -14,6 +14,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { Menu, X, Search } from "lucide-react"
+import { ModelCompare } from "./model-compare"
 
 const GITHUB_REPO_URL = "https://github.com/richardsondx/debugprompt"
 
@@ -90,10 +91,11 @@ function NavItems({ mobile = false, setIsMenuOpen = () => {} }) {
   }
 
   return (
-    <div className={mobile ? "flex flex-col space-y-4" : "flex items-center gap-6"}>
+    <div className={mobile ? "flex flex-col items-center space-y-4" : "flex items-center gap-6"}>
       <Link href="/learn" className="text-[#00F3FF] hover:text-[#00F3FF]/80" onClick={handleItemClick}>
         Learn
       </Link>
+      <ModelCompare />
       <Dialog>
         <DialogTrigger asChild>
           <Button variant="link" className="text-[#00F3FF] hover:text-[#00F3FF]/80 p-0" onClick={handleItemClick}>

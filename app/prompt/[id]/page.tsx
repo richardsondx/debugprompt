@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { useParams } from "next/navigation"
+import type { Prompt } from "@/types/prompt"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
@@ -9,6 +10,7 @@ import Link from "next/link"
 import { Copy, LinkIcon } from "lucide-react"
 import { toast } from "sonner"
 import prompts from "@/data/prompts.json"
+import Image from 'next/image'
 
 function getGithubUsername(githubUrl: string): string {
   return githubUrl.replace(/\/$/, '').split('/').pop() || ''
@@ -21,7 +23,7 @@ function getGithubAvatar(githubUrl: string): string {
 
 export default function PromptPage() {
   const params = useParams()
-  const [prompt, setPrompt] = useState<any>(null)
+  const [prompt, setPrompt] = useState<Prompt | null>(null)
 
   useEffect(() => {
     const foundPrompt = prompts.find((p) => p.id === params.id)
@@ -47,9 +49,11 @@ export default function PromptPage() {
       <Card className="bg-black/50 border-[#00F3FF]/20">
         <CardHeader className="flex flex-row items-start justify-between space-y-0 relative pb-2">
           <Link href={prompt.author.github} target="_blank" rel="noopener noreferrer">
-            <img
+            <Image
               src={getGithubAvatar(prompt.author.github) || "/placeholder.svg"}
               alt=""
+              width={40}
+              height={40}
               className="w-10 h-10 rounded-full hover:ring-2 hover:ring-[#00F3FF]"
             />
           </Link>
@@ -85,11 +89,6 @@ export default function PromptPage() {
           </div>
           <div className="relative group">
             <p className="text-xl text-gray-200 leading-relaxed whitespace-pre-wrap px-4">{prompt.prompt}</p>
-          </div>
-          <div className="flex justify-end">
-            <Badge variant="outline" className="border-[#00F3FF]/20 text-[#00F3FF]/70">
-              {prompt.model}
-            </Badge>
           </div>
         </CardContent>
       </Card>

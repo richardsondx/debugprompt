@@ -1,8 +1,9 @@
 "use client"
 
 import { useEffect } from "react"
-import ads from "@/data/ads.json"
 import { toast } from "sonner"
+import Image from "next/image"
+import ads from "@/data/ads.json"
 
 export default function AdToast() {
   useEffect(() => {
@@ -16,7 +17,13 @@ export default function AdToast() {
           className="flex items-center space-x-4 hover:opacity-80 transition-opacity"
           onClick={(e) => e.stopPropagation()} // Prevent toast from closing when clicking the link
         >
-          <img src={randomAd.logo || "/placeholder.svg"} alt="" className="w-10 h-10" />
+          <Image 
+            src={randomAd.logo || "/placeholder.svg"} 
+            alt=""
+            width={40} 
+            height={40} 
+            className="w-10 h-10"
+          />
           <div>
             <h3 className="font-bold">{randomAd.title}</h3>
             <p className="text-sm">{randomAd.text}</p>

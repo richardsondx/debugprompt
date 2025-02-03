@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import type { Prompt } from "@/types/prompt"
+import Image from "next/image"
 
 function getGithubUsername(githubUrl: string): string {
   return githubUrl.trim().replace(/\/$/, '').split('/').pop() || ''
@@ -45,19 +46,18 @@ export default function PromptCard({ prompt }: PromptCardProps) {
               ))}
             </div>
             <div className="flex items-center space-x-2">
-              <Badge variant="outline" className="border-[#00F3FF]/20 text-[#00F3FF]/70">
-                {prompt.model}
-              </Badge>
               <Link
                 href={prompt.author.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
               >
-                <img
+                <Image
                   src={getGithubAvatar(prompt.author.github) || "/placeholder.svg"}
-                  alt=""
-                  className="w-6 h-6 rounded-full hover:ring-2 hover:ring-[#00F3FF]"
+                  alt="Author avatar"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10 rounded-full hover:ring-2 hover:ring-[#00F3FF]"
                 />
               </Link>
             </div>

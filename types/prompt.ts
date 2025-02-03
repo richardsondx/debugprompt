@@ -6,7 +6,6 @@ export interface Prompt {
   category: string
   tags: string[]
   prompt: string
-  model: AIModel
   author: {
     avatar: string
     github: string

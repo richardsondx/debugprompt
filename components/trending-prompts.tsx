@@ -2,11 +2,11 @@ import PromptCard from "./prompt-card"
 
 interface Prompt {
   id: string
-  title: string
   category: string
   tags: string[]
   prompt: string
   upvotes: number
+  model: string[]
   author: {
     name: string
     avatar: string
