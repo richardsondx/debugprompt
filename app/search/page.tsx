@@ -6,6 +6,7 @@ interface SearchPageProps {
   searchParams: { q: string }
 }
 
+// @ts-expect-error - Temporary workaround for Next.js type mismatch
 export default async function SearchPage({ searchParams }: SearchPageProps) {
   const { q } = await Promise.resolve(searchParams)
 
