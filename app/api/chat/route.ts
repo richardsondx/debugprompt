@@ -22,8 +22,7 @@ Your response should:
 1. Be concise and focused
 2. Use numbered lists for steps
 3. Include validation points
-4. End with clear success criteria
-5. Use \n for line breaks
+4. Use \n for line breaks
 
 Format your response EXACTLY like this, with no additional text:
 [The debugging prompt with proper line breaks and formatting]`
