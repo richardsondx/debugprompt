@@ -97,6 +97,9 @@ function NavItems({ mobile = false, setIsMenuOpen = () => {} }: NavItemsProps) {
 
   return (
     <div className={mobile ? "flex flex-col items-center space-y-4" : "flex items-center gap-6"}>
+      <Link href="/generate" className="text-[#00F3FF] hover:text-[#00F3FF]/80" onClick={handleItemClick}>
+        Generate Prompt
+      </Link>
       <Link href="/learn" className="text-[#00F3FF] hover:text-[#00F3FF]/80" onClick={handleItemClick}>
         Learn
       </Link>
@@ -111,9 +114,9 @@ function NavItems({ mobile = false, setIsMenuOpen = () => {} }: NavItemsProps) {
           <DialogHeader>
             <DialogTitle className="text-[#00F3FF]">About DebugPrompt</DialogTitle>
             <div className="text-sm text-gray-300 mt-2">
-              DebugPrompt is an open-source hub where developers collaborate to master AI-powered debugging through precision prompt engineering. In an era where generative AI transforms how we code, a well-crafted prompt can mean the difference between hours of frustration and a swift, accurate solution.
+            DebugPrompt is an open-source community where developers share debugging prompt to debug with AI. A good prompt can mean the difference between hours of frustration and a quick, accurate fix.
               <br /><br />
-              This platform addresses a critical gap in generative AI driven development: <b className="animate-shimmer bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-200 bg-[length:200%_100%] text-transparent bg-clip-text">structured strategies to diagnose, analyze, and resolve coding issues efficiently using prompt engineering</b>.
+              You can use it to avoid getting stuck in debugging loops.
               <br /><br />
               DebugPrompt focuses on curating battle-tested prompts that:
               <div className="mt-2 space-y-1">

@@ -11,114 +11,97 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 
-const modelData = [
+const categoryData = [
     {
       category: "Error Diagnosis",
-      reasoningRequirement: "Models that can analyze code, identify errors, and provide detailed explanations.",
-      recommendedModels: "o3-mini-high, claude-3.5-sonnet, deepseek-r1",
+      description: "Systematic analysis of error messages, stack traces, and runtime exceptions to identify root causes and potential fixes.",
     },
     {
       category: "Data Flow Tracing",
-      reasoningRequirement: "Models capable of understanding and tracking complex data flows and execution paths.",
-      recommendedModels: "o3-mini, gemini-2.0-flash-experimental, cursor-small",
+      description: "Tracking how data moves through your application, from input to output, identifying transformation points and state changes.",
     },
     {
       category: "Approach Comparison",
-      reasoningRequirement: "Models that can evaluate and compare multiple problem-solving approaches.",
-      recommendedModels: "claude-3-opus, o1, cascade-base",
+      description: "Evaluating different solutions to the same problem, analyzing tradeoffs in performance, maintainability, and scalability.",
     },
     {
       category: "Pseudocode Analysis",
-      reasoningRequirement: "Models that excel at breaking down algorithms into logical steps and explaining them clearly.",
-      recommendedModels: "o1, claude-3.5-haiku, gpt-4o-mini",
+      description: "Breaking down algorithms and logic flows into human-readable steps before implementation to catch potential issues early.",
     },
     {
       category: "Assumption Testing",
-      reasoningRequirement: "Models proficient in identifying and questioning implicit assumptions in code logic.",
-      recommendedModels: "deepseek-r1, gpt-4-turbo-2024-04-09, claude-3.5-sonnet",
+      description: "Identifying and validating implicit assumptions in code, testing edge cases, and verifying expected behaviors.",
     },
     {
       category: "Refactoring",
-      reasoningRequirement: "Models optimized for code restructuring and improving code quality within IDEs.",
-      recommendedModels: "cursor-fast, claude-3-opus, o3-mini-high",
+      description: "Restructuring existing code to improve readability, maintainability, and performance without changing its external behavior.",
     },
     {
       category: "Performance Tuning",
-      reasoningRequirement: "Models capable of identifying performance bottlenecks and suggesting optimizations.",
-      recommendedModels: "gemini-2.0-flash-experimental, o3-mini, deepseek-r1",
+      description: "Identifying bottlenecks, optimizing resource usage, and improving execution speed through targeted improvements.",
     },
     {
       category: "Prompt Iteration",
-      reasoningRequirement: "Models that can quickly refine and improve prompts for better results.",
-      recommendedModels: "gpt-4o-mini, cascade-base, claude-3.5-haiku",
+      description: "Refining and improving debugging prompts to get more accurate and actionable responses from AI models.",
     },
     {
       category: "Test Generation",
-      reasoningRequirement: "Models skilled at creating comprehensive test cases based on code functionality.",
-      recommendedModels: "deepseek-r1, o3-mini-high, cursor-small",
+      description: "Creating comprehensive test suites that cover edge cases, error conditions, and expected behaviors.",
     },
     {
       category: "Environment Debugging",
-      reasoningRequirement: "Models with strong understanding of system dependencies and environment configurations.",
-      recommendedModels: "o1, gemini-2.0-flash-experimental, cascade-base",
+      description: "Troubleshooting issues related to development environments, dependencies, and configuration settings.",
     },
     {
       category: "Security Analysis",
-      reasoningRequirement: "Models specialized in identifying potential security vulnerabilities and suggesting fixes.",
-      recommendedModels: "gpt-4-turbo-2024-04-09, deepseek-r1, claude-3.5-sonnet",
+      description: "Identifying potential security vulnerabilities, reviewing authentication flows, and validating data protection measures.",
     },
     {
       category: "Edge Case Handling",
-      reasoningRequirement: "Models adept at identifying and addressing potential edge cases in code execution.",
-      recommendedModels: "claude-3.5-sonnet, o3-mini-high, cursor-fast",
+      description: "Systematically identifying and addressing boundary conditions, unexpected inputs, and error scenarios.",
     },
     {
       category: "Logic Breakdown",
-      reasoningRequirement: "Models that excel at dissecting complex logic and proposing alternative approaches.",
-      recommendedModels: "o1, claude-3.5-opus, deepseek-r1",
+      description: "Decomposing complex algorithms and business logic into smaller, verifiable components for easier debugging.",
     },
     {
       category: "Dependency Debugging",
-      reasoningRequirement: "Models with strong capabilities in analyzing and resolving package and module dependencies.",
-      recommendedModels: "o3-mini, gemini-2.0-flash-experimental, cascade-base",
+      description: "Resolving issues with external libraries, version conflicts, and integration points between different modules.",
     },
     {
       category: "Code Optimization",
-      reasoningRequirement: "Models specialized in improving code efficiency and readability.",
-      recommendedModels: "o3-mini-high, claude-3-opus, deepseek-r1, cursor-fast",
+      description: "Improving code efficiency, reducing complexity, and enhancing maintainability through targeted refactoring.",
     },
-  ]
+]
 
 export function ModelCompare() {
   return (
     <Dialog>
       <DialogTrigger asChild>
         <Button variant="link" className="text-[#00F3FF] hover:text-[#00F3FF]/80 p-0">
-          Guide
+          Categories
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[900px] bg-gray-900 text-white">
         <DialogHeader>
-          <DialogTitle className="text-[#00F3FF]">AI Model Recommendations</DialogTitle>
+          <DialogTitle className="text-[#00F3FF]">Debugging Categories</DialogTitle>
           <DialogDescription className="text-gray-300">
-            Recommended AI models for different debugging categories.
+            Different approaches to debugging and their descriptions.
           </DialogDescription>
         </DialogHeader>
         <ScrollArea className="h-[600px] pr-4">
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead className="text-[#00F3FF]">Debugging Category</TableHead>
-                <TableHead className="text-[#00F3FF]">Reasoning Requirement</TableHead>
-                <TableHead className="text-[#00F3FF]">Recommended Models</TableHead>
+                <TableHead className="text-[#00F3FF]">Category</TableHead>
+                <TableHead className="text-[#00F3FF]">Description</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              {modelData.map((row) => (
+              {categoryData.map((row) => (
                 <TableRow key={row.category}>
                   <TableCell className="font-medium">{row.category}</TableCell>
-                  <TableCell>{row.reasoningRequirement}</TableCell>
-                  <TableCell>{row.recommendedModels}</TableCell>
+                  <TableCell>{row.description}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
