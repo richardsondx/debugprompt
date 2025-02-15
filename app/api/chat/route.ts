@@ -1,6 +1,5 @@
 import { generateText } from 'ai'
 import { google } from '@ai-sdk/google'
-import promptsData from '@/data/prompts.json'
 import categoriesData from '@/data/categories.json'
 
 export async function POST(req: Request) {
