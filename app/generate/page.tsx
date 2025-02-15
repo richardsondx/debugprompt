@@ -119,6 +119,12 @@ export default function GeneratePage() {
               </div>
             </div>
           </div>
+          <div className="mt-4 text-center">
+            <p className="text-pink-500 mb-2 animate-shimmer">Built by @Richardsondx</p>
+            <Button className="bg-black text-white" onClick={() => window.open("https://www.x.com/richardsondx", "_blank")}>
+              Follow me on X
+            </Button>
+          </div>
         </div>
       )}
     </div>
