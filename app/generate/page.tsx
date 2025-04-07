@@ -57,7 +57,7 @@ export default function GeneratePage() {
   return (
     <div className="container mx-auto px-4 pt-24 pb-12">
       <h1 className="text-4xl font-bold text-center text-[#00F3FF] mb-12">
-        Generate Debug Prompt from Your Issues
+       Generate a Debugging Prompt from Your Issue
       </h1>
 
       <form onSubmit={handleSubmit} className="max-w-3xl mx-auto space-y-4">

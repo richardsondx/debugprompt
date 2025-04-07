@@ -97,8 +97,8 @@ function NavItems({ mobile = false, setIsMenuOpen = () => {} }: NavItemsProps) {
 
   return (
     <div className={mobile ? "flex flex-col items-center space-y-4" : "flex items-center gap-6"}>
-      <Link href="/generate" className="text-[#00F3FF] hover:text-[#00F3FF]/80" onClick={handleItemClick}>
-        Generate Prompt
+      <Link href="/modes" className="text-[#00F3FF] hover:text-[#00F3FF]/80" onClick={handleItemClick}>
+        Modes
       </Link>
       <Link href="/learn" className="text-[#00F3FF] hover:text-[#00F3FF]/80" onClick={handleItemClick}>
         Learn
