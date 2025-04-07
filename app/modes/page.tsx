@@ -21,6 +21,11 @@ interface ModeProperties {
       readFiles: boolean
       fetchRules: boolean
     }
+    edit: {
+      enabled: boolean
+      editReapply: boolean
+      deleteFile: boolean
+    }
     run: {
       enabled: boolean
       terminal: boolean
@@ -64,6 +69,11 @@ const debuggingModes: Mode[] = [
           searchFiles: true,
           readFiles: true,
           fetchRules: true
+        },
+        edit: {
+          enabled: true,
+          editReapply: true,
+          deleteFile: true
         },
         run: {
           enabled: true,
@@ -127,6 +137,11 @@ Always focus on the root cause of the issue (e.g., a race condition in the API c
           readFiles: true,
           fetchRules: true
         },
+        edit: {
+          enabled: true,
+          editReapply: true,
+          deleteFile: true
+        },
         run: {
           enabled: true,
           terminal: true
@@ -189,6 +204,11 @@ Focus on the root cause of the layout issue (e.g., a specificity conflict due to
           readFiles: true,
           fetchRules: true
         },
+        edit: {
+          enabled: true,
+          editReapply: true,
+          deleteFile: true
+        },
         run: {
           enabled: true,
           terminal: true
@@ -250,6 +270,11 @@ Always focus on the root cause of the issue (e.g., a missing schema leading to i
           searchFiles: true,
           readFiles: true,
           fetchRules: true
+        },
+        edit: {
+          enabled: true,
+          editReapply: true,
+          deleteFile: true
         },
         run: {
           enabled: true,
@@ -375,6 +400,18 @@ const ModeCard = ({ mode }: { mode: Mode }) => {
                   <div className="flex items-center space-x-2">
                     <div className={`w-3 h-3 rounded-full ${mode.properties.tools.search.readFiles ? 'bg-green-500' : 'bg-gray-500'}`}></div>
                     <span className="text-sm text-gray-300">Read Files</span>
+                  </div>
+                </div>
+
+                <div className="text-gray-400 mt-3 mb-1">Edit</div>
+                <div className="grid grid-cols-2 gap-2 pl-4">
+                  <div className="flex items-center space-x-2">
+                    <div className={`w-3 h-3 rounded-full ${mode.properties.tools.edit.editReapply ? 'bg-green-500' : 'bg-gray-500'}`}></div>
+                    <span className="text-sm text-gray-300">Edit & Reapply</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className={`w-3 h-3 rounded-full ${mode.properties.tools.edit.deleteFile ? 'bg-green-500' : 'bg-gray-500'}`}></div>
+                    <span className="text-sm text-gray-300">Delete file</span>
                   </div>
                 </div>
 
