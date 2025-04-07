@@ -5,7 +5,6 @@ import { Copy, Check } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { cn } from '@/lib/utils'
 
 interface ModeProperties {
   model: string
@@ -499,7 +498,7 @@ export default function ModesPage() {
         <h2 className="text-2xl font-semibold text-[#00F3FF] mb-4">How to Use These Modes in Cursor</h2>
         <ol className="list-decimal list-inside space-y-3 text-gray-300">
           <li>Open Cursor and click on the Mode Selection button in the sidebar</li>
-          <li>Click "Create New Mode" to create a custom mode</li>
+          <li>Click &quot;Create New Mode&quot; to create a custom mode</li>
           <li>Name your mode and select the appropriate model (claude-3.7-sonnet MAX recommended)</li>
           <li>Enable the tools listed in the configuration section</li>
           <li>Paste the Custom Instructions into the instructions field</li>
