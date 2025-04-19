@@ -10,6 +10,7 @@ import GoogleAnalytics from "@/components/google-analytics"
 import categories from "@/data/categories.json"
 import prompts from "@/data/prompts.json"
 import type React from "react"
+import { PostHogProvider } from "@/components/PostHogProvider"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -37,15 +38,17 @@ export default function RootLayout({
         <GoogleAnalytics />
       </head>
       <body className={`${inter.className} bg-[#0A0A0A] text-white min-h-screen flex flex-col`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          <Navbar />
-          <div className="flex flex-1 flex-col lg:flex-row pt-16">
-            <CategorySidebar categories={categories} counts={categoryCounts} />
-            <main className="flex-1 p-4 lg:p-6 overflow-y-auto">{children}</main>
-          </div>
-          <Toaster />
-          <AdToast />
-        </ThemeProvider>
+        <PostHogProvider>
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+            <Navbar />
+            <div className="flex flex-1 flex-col lg:flex-row pt-16">
+              <CategorySidebar categories={categories} counts={categoryCounts} />
+              <main className="flex-1 p-4 lg:p-6 overflow-y-auto">{children}</main>
+            </div>
+            <Toaster />
+            <AdToast />
+          </ThemeProvider>
+        </PostHogProvider>
       </body>
     </html>
   )
